@@ -1,29 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Fork Me! FCC: Test Suite Template</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<body>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+		<div class="container">
+			<header class="header">
+				<h1 id="title" class="text-center">Rushema and Tomide Survey Form</h1>
+				<p id="description" class="description text-center">
+					This a form providing feeback on the Microverse program
+				</p>
+			</header>
+			<form id="survey-form">
+				<div class="form-group">
+					<label id="name-label" for="name">Participant 1 Name</label>
+					<input
+						type="text"
+						name="particpant 1 name"
+						id="name"
+						class="form-control"
+						placeholder="Enter your name"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<label id="name-label" for="name">Participant 2 Name</label>
+					<input
+						type="text"
+						name="name2"
+						id="Participant 2 name"
+						class="form-control"
+						placeholder="Enter your name"
+						required
+					/>
+				</div>
+				<div class="form-group">
+					<label id="email-label" for="email">Email</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						class="form-control"
+						placeholder="Enter your Email"
+						required
+					/>
+				</div>
 
-    Hello Camper!
+				<div class="form-group">
+					<p>Which platform did you schedule the call on?</p>
+					<label
+						><input
+							name="prefer"
+							value="zoom"
+							type="checkbox"
+							class="input-checkbox"
+						/>Zoom</label
+					>
+					<label>
+						<input
+							name="prefer"
+							value="Meet"
+							type="checkbox"
+							class="input-checkbox"
+						/>Meet</label
+					>
+				</div>
+				<div class="form-group">
+					<p>Would you like to retake the project?</p>
+					<label>
+						<input
+							name="user-recommend"
+							value="definitely"
+							type="radio"
+							class="input-radio"
+							checked
+						/>Yes</label
+					>
+					<label>
+						<input
+							name="user-recommend"
+							value="maybe"
+							type="radio"
+							class="input-radio"
+						/>No</label
+					>
+				</div>
+				<div class="form-group">
+					<label id="number-label" for="number"
+						>How many hours was the project</label
+					>
+					<input
+						type="number"
+						name="hours"
+						id="number"
+						min="0"
+						max="5"
+						class="form-control"
+						placeholder="hours"
+					/>
+				</div>
+				<div class="form-group">
+					<p>What technologies did you use in building your projects</p>
+					<select id="dropdown" name="role" class="form-control" required>
+						<option disabled selected value>None</option>
+						<option value="javascript">Java Script</option>
+						<option value="css">CSS</option>
+						<option value="css">HTML</option>
+					</select>
+				</div>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+				<div class="form-group">
+					<p>What challenges did you face while working on the project?</p>
+					<textarea
+						id="comments"
+						class="input-textarea"
+						name="comment"
+						placeholder="Type out the challenges you faced"
+					></textarea>
+				</div>
 
-    - The freeCodeCamp Team
+				<div class="form-group">
+					<button type="submit" id="submit" class="submit-button">
+						Push this buttom
+					</button>
+				</div>
+			</form>
+		</div>
 
-    -->
-
-    hello world 
-
-    <script  src="js/index.js"></script>
-  </body>
+		<script src="js/index.js"></script>
+	</body>
 </html>
